@@ -168,6 +168,7 @@ window.spiderAnimations.resumeAnimations();
 ---
 
 **Created by Kulwanth** 🚀  
-*Ultra-Advanced AI Frontend Developer*
+*Gen-AGI Developer* *Web-Developer*
+
 
 > This frontend demonstrates cutting-edge web development skills while maintaining full compatibility with the existing SPIDER v2.1 backend system.
