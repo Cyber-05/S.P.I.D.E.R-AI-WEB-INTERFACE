@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPIDER v2.1 - Ultra-Advanced AI Assistant | 6 Elite Agents</title>
+    <meta name="description" content="Experience the future of AI with SPIDER v2.1 - 6 specialized elite agents with ultra-fast processing, 3D interfaces, and cutting-edge automation">
+    
+    <!-- External Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-container">
+            <div class="spider-logo">
+                <div class="spider-eye"></div>
+                <div class="spider-legs">
+                    <div class="leg leg-1"></div>
+                    <div class="leg leg-2"></div>
+                    <div class="leg leg-3"></div>
+                    <div class="leg leg-4"></div>
+                </div>
+            </div>
+            <h1 class="loading-title">SPIDER v2.1</h1>
+            <p class="loading-subtitle">Initializing Ultra-Advanced AI Systems...</p>
+            <div class="loading-progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-spider"></i>
+                <span>SPIDER v2.1</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" data-section="home">Home</a></li>
+                <li><a href="#agents" data-section="agents">Agents</a></li>
+                <li><a href="#features" data-section="features">Features</a></li>
+                <li><a href="#demo" data-section="demo">Live Demo</a></li>
+                <li><a href="#contact" data-section="contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with 3D Background -->
+    <section id="home" class="hero-section">
+        <div id="hero-canvas" class="hero-canvas"></div>
+        <div id="particles-js" class="particles-container"></div>
+        
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-icon">🕷️</span>
+                <span class="badge-text">Ultra-Advanced AI Assistant</span>
+            </div>
+            
+            <h1 class="hero-title">
+                <span class="title-line">SPIDER</span>
+                <span class="title-version">v2.1</span>
+            </h1>
+            
+            <p class="hero-subtitle">
+                Experience the future with <strong>6 Elite AI Agents</strong><br>
+                Ultra-fast processing • 3D interfaces • Advanced automation
+            </p>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="6">0</span>
+                    <span class="stat-label">Elite Agents</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="300">0</span>
+                    <span class="stat-label">Response Time (ms)</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="99">0</span>
+                    <span class="stat-label">Accuracy %</span>
+                </div>
+            </div>
+            
+            <div class="hero-actions">
+                <button class="btn btn-primary btn-launch" data-action="launch">
+                    <i class="fas fa-rocket"></i>
+                    Launch Demo
+                </button>
+                <button class="btn btn-secondary btn-explore" data-action="explore">
+                    <i class="fas fa-search"></i>
+                    Explore Agents
+                </button>
+            </div>
+            
+            <div class="hero-scroll">
+                <div class="scroll-indicator">
+                    <div class="scroll-dot"></div>
+                </div>
+                <span class="scroll-text">Scroll to discover</span>
+            </div>
+        </div>
+        
+        <!-- Floating Elements -->
+        <div class="floating-elements">
+            <div class="float-element float-1">💻</div>
+            <div class="float-element float-2">🎨</div>
+            <div class="float-element float-3">📱</div>
+            <div class="float-element float-4">🎓</div>
+            <div class="float-element float-5">📊</div>
+            <div class="float-element float-6">📄</div>
+        </div>
+    </section>
+
+    <!-- Agents Showcase -->
+    <section id="agents" class="agents-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Meet Our Elite Agents</h2>
+                <p class="section-subtitle">6 specialized AI agents, each mastering their domain with unprecedented precision</p>
+            </div>
+            
+            <div class="agents-grid">
+                <!-- Coding Agent -->
+                <div class="agent-card" data-agent="coding">
+                    <div class="agent-card-inner">
+                        <div class="agent-front">
+                            <div class="agent-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3 class="agent-name">Coding Agent</h3>
+                            <p class="agent-subtitle">Full-Stack Developer</p>
+                            <div class="agent-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Three.js</span>
+                                <span class="tech-tag">Node.js</span>
+                            </div>
+                        </div>
+                        <div class="agent-back">
+                            <div class="agent-capabilities">
+                                <h4>Capabilities</h4>
+                                <ul>
+                                    <li>🚀 3D Web Applications</li>
+                                    <li>💻 Live Coding Demo</li>
+                                    <li>📝 Automated Documentation</li>
+                                    <li>⚡ Ultra-fast Development</li>
+                                </ul>
+                            </div>
+                            <button class="btn btn-agent" data-agent-id="coding">
+                                <i class="fas fa-play"></i>
+                                Activate Agent
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Design Agent -->
+                <div class="agent-card" data-agent="design">
+                    <div class="agent-card-inner">
+                        <div class="agent-front">
+                            <div class="agent-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <h3 class="agent-name">Design Agent</h3>
+                            <p class="agent-subtitle">UI/UX Specialist</p>
+                            <div class="agent-tech">
+                                <span class="tech-tag">3D Design</span>
+                                <span class="tech-tag">Glassmorphism</span>
+                                <span class="tech-tag">Motion</span>
+                            </div>
+                        </div>
+                        <div class="agent-back">
+                            <div class="agent-capabilities">
+                                <h4>Capabilities</h4>
+                                <ul>
+                                    <li>🎨 3D Interface Design</li>
+                                    <li>✨ Advanced Animations</li>
+                                    <li>🔮 Glassmorphism Effects</li>
+                                    <li>📱 Responsive Layouts</li>
+                                </ul>
+                            </div>
+                            <button class="btn btn-agent" data-agent-id="design">
+                                <i class="fas fa-play"></i>
+                                Activate Agent
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile Agent -->
+                <div class="agent-card" data-agent="mobile">
+                    <div class="agent-card-inner">
+                        <div class="agent-front">
+                            <div class="agent-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h3 class="agent-name">Mobile Agent</h3>
+                            <p class="agent-subtitle">Wireless Controller</p>
+                            <div class="agent-tech">
+                                <span class="tech-tag">ADB</span>
+                                <span class="tech-tag">Android</span>
+                                <span class="tech-tag">Remote</span>
+                            </div>
+                        </div>
+                        <div class="agent-back">
+                            <div class="agent-capabilities">
+                                <h4>Capabilities</h4>
+                                <ul>
+                                    <li>📱 Wireless ADB Control</li>
+                                    <li>🔧 App Management</li>
+                                    <li>📲 Remote Operations</li>
+                                    <li>⚡ Real-time Monitoring</li>
+                                </ul>
+                            </div>
+                            <button class="btn btn-agent" data-agent-id="mobile">
+                                <i class="fas fa-play"></i>
+                                Activate Agent
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Teaching Agent -->
+                <div class="agent-card" data-agent="teaching">
+                    <div class="agent-card-inner">
+                        <div class="agent-front">
+                            <div class="agent-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h3 class="agent-name">Teaching Agent</h3>
+                            <p class="agent-subtitle">Educational Master</p>
+                            <div class="agent-tech">
+                                <span class="tech-tag">Courses</span>
+                                <span class="tech-tag">Assessment</span>
+                                <span class="tech-tag">AI Tutor</span>
+                            </div>
+                        </div>
+                        <div class="agent-back">
+                            <div class="agent-capabilities">
+                                <h4>Capabilities</h4>
+                                <ul>
+                                    <li>🎓 Systematic Courses</li>
+                                    <li>📊 Skill Assessments</li>
+                                    <li>🤖 Personalized Learning</li>
+                                    <li>📈 Progress Tracking</li>
+                                </ul>
+                            </div>
+                            <button class="btn btn-agent" data-agent-id="teaching">
+                                <i class="fas fa-play"></i>
+                                Activate Agent
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PowerBI Agent -->
+                <div class="agent-card" data-agent="powerbi">
+                    <div class="agent-card-inner">
+                        <div class="agent-front">
+                            <div class="agent-icon">
+                                <i class="fas fa-chart-bar"></i>
+                            </div>
+                            <h3 class="agent-name">PowerBI Agent</h3>
+                            <p class="agent-subtitle">Analytics Expert</p>
+                            <div class="agent-tech">
+                                <span class="tech-tag">BI</span>
+                                <span class="tech-tag">Dashboards</span>
+                                <span class="tech-tag">KPIs</span>
+                            </div>
+                        </div>
+                        <div class="agent-back">
+                            <div class="agent-capabilities">
+                                <h4>Capabilities</h4>
+                                <ul>
+                                    <li>📊 Advanced Dashboards</li>
+                                    <li>📈 Real-time Analytics</li>
+                                    <li>🎯 KPI Monitoring</li>
+                                    <li>📋 Automated Reports</li>
+                                </ul>
+                            </div>
+                            <button class="btn btn-agent" data-agent-id="powerbi">
+                                <i class="fas fa-play"></i>
+                                Activate Agent
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Word Agent -->
+                <div class="agent-card" data-agent="word">
+                    <div class="agent-card-inner">
+                        <div class="agent-front">
+                            <div class="agent-icon">
+                                <i class="fas fa-file-word"></i>
+                            </div>
+                            <h3 class="agent-name">Word Agent</h3>
+                            <p class="agent-subtitle">Document Specialist</p>
+                            <div class="agent-tech">
+                                <span class="tech-tag">AI Content</span>
+                                <span class="tech-tag">Templates</span>
+                                <span class="tech-tag">Auto-format</span>
+                            </div>
+                        </div>
+                        <div class="agent-back">
+                            <div class="agent-capabilities">
+                                <h4>Capabilities</h4>
+                                <ul>
+                                    <li>📄 Professional Documents</li>
+                                    <li>✍️ AI Content Generation</li>
+                                    <li>📋 Smart Templates</li>
+                                    <li>🔧 Auto-formatting</li>
+                                </ul>
+                            </div>
+                            <button class="btn btn-agent" data-agent-id="word">
+                                <i class="fas fa-play"></i>
+                                Activate Agent
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Revolutionary Features</h2>
+                <p class="section-subtitle">Cutting-edge technology meets intuitive design</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Ultra-Fast Response</h3>
+                    <p>Average response time of 300ms with advanced caching and optimization</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3>3D Interfaces</h3>
+                    <p>Immersive 3D user interfaces powered by Three.js for enhanced interaction</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI-Powered Automation</h3>
+                    <p>Intelligent automation that learns and adapts to your workflow patterns</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Enterprise Security</h3>
+                    <p>Bank-grade security with end-to-end encryption and secure processing</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>Multi-Language Support</h3>
+                    <p>Native support for English and Telugu with advanced TTS capabilities</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync"></i>
+                    </div>
+                    <h3>Real-Time Sync</h3>
+                    <p>Seamless synchronization across all agents and real-time collaboration</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Live Demo Section -->
+    <section id="demo" class="demo-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience SPIDER Live</h2>
+                <p class="section-subtitle">See our agents in action with real-time demonstrations</p>
+            </div>
+            
+            <div class="demo-container">
+                <div class="demo-screen">
+                    <div class="screen-header">
+                        <div class="screen-controls">
+                            <span class="control control-close"></span>
+                            <span class="control control-minimize"></span>
+                            <span class="control control-maximize"></span>
+                        </div>
+                        <div class="screen-title">SPIDER v2.1 Interface</div>
+                    </div>
+                    <div class="screen-content">
+                        <div class="demo-placeholder">
+                            <div class="demo-icon">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                            <h3>Interactive Demo</h3>
+                            <p>Click "Start Demo" to see SPIDER in action</p>
+                            <button class="btn btn-primary btn-start-demo">
+                                <i class="fas fa-play"></i>
+                                Start Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="demo-controls">
+                    <div class="control-group">
+                        <h4>Select Agent</h4>
+                        <div class="agent-selector">
+                            <button class="agent-btn active" data-demo-agent="coding">
+                                <i class="fas fa-code"></i>
+                                Coding
+                            </button>
+                            <button class="agent-btn" data-demo-agent="design">
+                                <i class="fas fa-palette"></i>
+                                Design
+                            </button>
+                            <button class="agent-btn" data-demo-agent="mobile">
+                                <i class="fas fa-mobile-alt"></i>
+                                Mobile
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="control-group">
+                        <h4>Demo Commands</h4>
+                        <div class="command-buttons">
+                            <button class="cmd-btn" data-command="Create a modern website">Create Website</button>
+                            <button class="cmd-btn" data-command="Generate 3D design">3D Design</button>
+                            <button class="cmd-btn" data-command="Connect to mobile">Mobile Control</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get Started Today</h2>
+                <p class="section-subtitle">Ready to revolutionize your workflow with AI?</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <i class="fas fa-user"></i>
+                        <span>Created by K.V.S Kulwanth</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-code"></i>
+                        <span>Full-Stack AI Developer</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-rocket"></i>
+                        <span>Specialized in AI Systems</span>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <i class="fas fa-spider"></i>
+                        <span>SPIDER v2.1</span>
+                    </div>
+                    <p>Ultra-Advanced AI Assistant System</p>
+                </div>
+                <div class="footer-right">
+                    <p>&copy; 2024 SPIDER AI. Created by K.V.S Kulwanth. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/three-scene.js"></script>
+    <script src="scripts/particles-config.js"></script>
+    <script src="scripts/animations.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
