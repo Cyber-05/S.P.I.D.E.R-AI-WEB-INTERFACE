@@ -168,7 +168,8 @@ window.spiderAnimations.resumeAnimations();
 ---
 
 **Created by Kulwanth** 🚀  
-*Gen-AGI Developer* *Web-Developer*
+*The AGI Hackathon Expert* ,* *Web-Developer*
 
 
 > This frontend demonstrates cutting-edge web development skills while maintaining full compatibility with the existing SPIDER v2.1 backend system.
+
